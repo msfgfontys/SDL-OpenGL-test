@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C9924D019294D6300A62AE5 /* SDL2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C9924CF19294D6300A62AE5 /* SDL2.framework */; };
 		4CA1C34819294CED009AE7C5 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4CA1C34719294CED009AE7C5 /* main.cpp */; };
 		4CA1C34A19294CED009AE7C5 /* SDL_OpenGL_test.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4CA1C34919294CED009AE7C5 /* SDL_OpenGL_test.1 */; };
 /* End PBXBuildFile section */
@@ -25,6 +26,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4C9924CF19294D6300A62AE5 /* SDL2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2.framework; path = ../../../../../../Library/Frameworks/SDL2.framework; sourceTree = "<group>"; };
 		4CA1C34419294CED009AE7C5 /* SDL OpenGL test */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "SDL OpenGL test"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CA1C34719294CED009AE7C5 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		4CA1C34919294CED009AE7C5 /* SDL_OpenGL_test.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = SDL_OpenGL_test.1; sourceTree = "<group>"; };
@@ -35,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C9924D019294D6300A62AE5 /* SDL2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +47,7 @@
 		4CA1C33B19294CED009AE7C5 = {
 			isa = PBXGroup;
 			children = (
+				4C9924CF19294D6300A62AE5 /* SDL2.framework */,
 				4CA1C34619294CED009AE7C5 /* SDL OpenGL test */,
 				4CA1C34519294CED009AE7C5 /* Products */,
 			);
@@ -197,6 +201,10 @@
 		4CA1C34E19294CED009AE7C5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -204,6 +212,10 @@
 		4CA1C34F19294CED009AE7C5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -227,6 +239,7 @@
 				4CA1C34F19294CED009AE7C5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
